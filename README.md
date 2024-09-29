@@ -137,7 +137,56 @@ The `Order` class is linked to the following:
 - **CartItem**: Tracks products in the order, including `productID`, `quantity`, and `price`.
 
 ## JSON Schema
-*Placeholder*
+
+Our e-commerce application provides a REST endpoint that emits JSON data, which can be consumed by external systems. Below is a draft JSON schema that outlines the structure of the data the endpoint returns.
+
+We used `QuickType.io` to generate the schema based on our DTO (Data Transfer Object) classes. The schema is designed to be flexible and extendable, ensuring future adjustments can be made as the project evolves.
+
+### Example JSON Schema for Product
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "productID": {
+      "type": "string",
+      "description": "Unique identifier for the product."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the product."
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the product."
+    },
+    "price": {
+      "type": "number",
+      "description": "The price of the product."
+    },
+    "stock": {
+      "type": "integer",
+      "description": "The quantity available in stock."
+    },
+    "category": {
+      "type": "string",
+      "description": "The product's category."
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "The product's subcategory."
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "An array of image URLs associated with the product."
+    }
+  },
+  "required": ["productID", "name", "price", "stock"]
+}
+
 
 ## SCRUM Roles
 - Scrum Master: Andrew Grosko
