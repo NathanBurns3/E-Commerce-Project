@@ -77,7 +77,7 @@ Data is stored in a relational **SQL** database to demonstrate database interact
 3. Given I have an empty wishlist, when I try to view it, then the system should display a message indicating my wishlist is empty.
 
 ## Class Diagram
-*Placeholder*
+![Class Diagram](./ClassDiagram.png)
 
 ## JSON Schema
 *Placeholder*
