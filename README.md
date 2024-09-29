@@ -150,7 +150,7 @@ The `Order` class is linked to the following:
 [GitHub Repository](https://github.com/NathanBurns3/E-Commerce-Project)
 
 ## SCRUM Board
-*Link placeholder*
+[SCRUM Board](https://github.com/orgs/Enterprise-Final-Project/projects/2)
 
 ## Teams Standup Link
 [Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGFjYzUzM2QtYTdjNS00ZTZkLWJlNmEtMTlmNzAzOTExZmQz%40thread.v2/0?context=%7b%22Tid%22%3a%22f5222e6c-5fc6-48eb-8f03-73db18203b63%22%2c%22Oid%22%3a%2236a902b9-c125-4af8-b2fb-8b8a2fee2fca%22%7d)
