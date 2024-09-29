@@ -186,6 +186,7 @@ We used `QuickType.io` to generate the schema based on our DTO (Data Transfer Ob
   },
   "required": ["productID", "name", "price", "stock"]
 }
+```
 
 ### Example JSON Schema for Order
 
@@ -235,8 +236,7 @@ We used `QuickType.io` to generate the schema based on our DTO (Data Transfer Ob
   },
   "required": ["orderID", "orderDate", "userID", "totalAmount", "items"]
 }
-
-
+```
 
 ## SCRUM Roles
 - Scrum Master: Andrew Grosko
