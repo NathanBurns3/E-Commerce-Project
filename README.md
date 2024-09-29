@@ -187,6 +187,56 @@ We used `QuickType.io` to generate the schema based on our DTO (Data Transfer Ob
   "required": ["productID", "name", "price", "stock"]
 }
 
+### Example JSON Schema for Order
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "orderID": {
+      "type": "string",
+      "description": "Unique identifier for the order."
+    },
+    "orderDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the order was placed."
+    },
+    "userID": {
+      "type": "string",
+      "description": "The ID of the user who placed the order."
+    },
+    "totalAmount": {
+      "type": "number",
+      "description": "The total cost of the order."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "productID": {
+            "type": "string",
+            "description": "Unique identifier for the product."
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity of the product ordered."
+          },
+          "price": {
+            "type": "number",
+            "description": "Price of the product."
+          }
+        },
+        "required": ["productID", "quantity", "price"]
+      },
+      "description": "Array of items included in the order."
+    }
+  },
+  "required": ["orderID", "orderDate", "userID", "totalAmount", "items"]
+}
+
+
 
 ## SCRUM Roles
 - Scrum Master: Andrew Grosko
