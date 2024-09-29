@@ -1,6 +1,6 @@
 # E-Commerce Application
 
-## Introduction - Nathan
+## Introduction
 
 Our e-commerce application simulates a platform for users to explore fictional products. Built with **Spring Boot** for the backend and **Thymeleaf** for dynamic web pages, it offers a structured and responsive user experience.
 
@@ -8,11 +8,11 @@ The application includes key e-commerce features like user registration, product
 
 Data is stored in a relational **SQL** database to demonstrate database interactions and manage our fictional inventory. The project focuses on a user-friendly interface with a responsive design for accessibility on various devices. Our goal is to create an engaging and educational e-commerce simulation that showcases our web application development skills.
 
-## Storyboard - Noah
+## Storyboard
 
 *Content placeholder*
 
-## Functional Requirements - Alexander
+## Functional Requirements
 
 ### Requirement 1: User Registration and Login
 - As a new user, I want to register for an account so that I can shop, purchase products, and use other features of the application.
@@ -76,24 +76,24 @@ Data is stored in a relational **SQL** database to demonstrate database interact
 2. Given I have multiple items in my wishlist, when I remove an item or move it to the cart, then the wishlist should reflect these changes, and the product should no longer appear if removed.
 3. Given I have an empty wishlist, when I try to view it, then the system should display a message indicating my wishlist is empty.
 
-## Class Diagram - Alexander
+## Class Diagram
 *Placeholder*
 
-## JSON Schema - Darian
+## JSON Schema
 *Placeholder*
 
-## SCRUM Roles - Andrew
+## SCRUM Roles
 - Scrum Master: Andrew Grosko
 - Product Owner: Nathan Burns
 - Developer: Noah Jackson-Huddleston
 - Developer: Alexander Grisby
 - Developer: Darian Fulton
 
-## GitHub Link - Nathan
+## GitHub Link
 [GitHub Repository](https://github.com/NathanBurns3/E-Commerce-Project)
 
-## SCRUM Board - Andrew
+## SCRUM Board
 *Link placeholder*
 
-## Teams Standup Link - Nathan
+## Teams Standup Link
 [Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGFjYzUzM2QtYTdjNS00ZTZkLWJlNmEtMTlmNzAzOTExZmQz%40thread.v2/0?context=%7b%22Tid%22%3a%22f5222e6c-5fc6-48eb-8f03-73db18203b63%22%2c%22Oid%22%3a%2236a902b9-c125-4af8-b2fb-8b8a2fee2fca%22%7d)
