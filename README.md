@@ -238,6 +238,79 @@ We used `QuickType.io` to generate the schema based on our DTO (Data Transfer Ob
 }
 ```
 
+### Example JSON Schema for User
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "userID": {
+      "type": "string",
+      "description": "Unique identifier for the user."
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "The user's email address."
+    },
+    "password": {
+      "type": "string",
+      "description": "The user's password (hashed)."
+    },
+    "mailingAddress": {
+      "type": "string",
+      "description": "The user's mailing address."
+    },
+    "shippingAddress": {
+      "type": "string",
+      "description": "The user's shipping address."
+    },
+    "accountType": {
+      "type": "string",
+      "enum": ["Buyer", "Seller", "Admin"],
+      "description": "Defines the role of the user."
+    },
+    "paymentMethod": {
+      "type": "string",
+      "description": "The user's preferred payment method."
+    },
+    "orderHistory": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of order IDs representing the user's order history."
+    },
+    "wishlist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of product IDs that the user has added to their wishlist."
+    },
+    "cart": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "productID": {
+            "type": "string",
+            "description": "Unique identifier for the product."
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity of the product in the cart."
+          }
+        },
+        "required": ["productID", "quantity"]
+      },
+      "description": "Array of items currently in the user's shopping cart."
+    }
+  },
+  "required": ["userID", "email", "password", "accountType"]
+}
+```
+
 ## SCRUM Roles
 - Scrum Master: Andrew Grosko
 - Product Owner: Nathan Burns
