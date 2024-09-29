@@ -10,7 +10,7 @@ Data is stored in a relational **SQL** database to demonstrate database interact
 
 ## Storyboard
 
-*Content placeholder*
+![Storyboard](./storyboard.png)
 
 ## Functional Requirements
 
