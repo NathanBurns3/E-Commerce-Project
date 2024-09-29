@@ -79,6 +79,63 @@ Data is stored in a relational **SQL** database to demonstrate database interact
 ## Class Diagram
 ![Class Diagram](./ClassDiagram.png)
 
+### Class Diagram Overview
+
+This class diagram represents a simple e-commerce system, outlining users, products, orders, payments, shipping, and reviews.
+
+### User Class
+
+At the core is the `User` class, which contains the following key attributes:
+- `userID`: Unique identifier for the user.
+- `email`: The user’s email address.
+- `password`: The user’s password.
+- `mailingAddress`: The user’s mailing address.
+- `shippingAddress`: The user’s shipping address.
+- `accountType`: Defines the role of the user (Buyer, Seller, Admin).
+- `paymentMethod`: User's payment method (type unspecified).
+
+The `User` class is extended by three roles:
+- **Buyer**: Has a `Cart`, `orderHistory`, and `wishlist`.
+- **Seller**: Manages a `productList` and `orderFulfillment`.
+- **Admin**: Identified by an `accountType` of 1.
+
+### Product Class
+
+The `Product` class defines a product with attributes like:
+- `productID`: Unique identifier for the product.
+- `name`: Product name.
+- `description`: Description of the product.
+- `price`: Price of the product.
+- `stock`: Number of items in stock.
+- `category`: Product's category.
+- `subcategory`: Product's subcategory.
+- `images`: Array of images associated with the product.
+
+Each product belongs to a **Category**, which includes:
+- `categoryID`: Unique identifier for the category.
+- `categoryName`: Name of the category.
+
+### Review Class
+
+Users can leave feedback on products through the `Review` class, which includes:
+- `reviewID`: Unique identifier for the review.
+- `rating`: Rating provided by the user.
+- `comment`: Written review.
+- `userID`: The ID of the user who left the review.
+
+### Order Class
+
+The `Order` class handles transactions, containing:
+- `orderID`: Unique identifier for the order.
+- `orderDate`: Date and time the order was placed.
+- `userID`: ID of the user who placed the order.
+- `totalAmount`: Total cost of the order.
+
+The `Order` class is linked to the following:
+- **Payment**: Tracks payment details with `paymentID`, `paymentMethod`, and `paymentStatus`.
+- **ShippingDetails**: Includes `shippingAddress`, `shippingType`, and `deliveryDate`.
+- **CartItem**: Tracks products in the order, including `productID`, `quantity`, and `price`.
+
 ## JSON Schema
 *Placeholder*
 
